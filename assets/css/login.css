@@ -9,6 +9,7 @@ body {
     place-items: center;
     height: 100vh;
     background: linear-gradient(to right bottom, #1e3a8a, #274ba4, #2f5dbf, #366fda, #3b82f6) no-repeat;
+    background-size: cover;
 }
 
 .container {
