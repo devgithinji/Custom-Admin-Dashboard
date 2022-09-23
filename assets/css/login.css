@@ -1,0 +1,123 @@
+@import "starter.css";
+
+html {
+    height: 100%;
+}
+
+body {
+    background: linear-gradient(to right bottom, #1e3a8a, #274ba4, #2f5dbf, #366fda, #3b82f6);
+    display: grid;
+    place-items: center;
+    height: 100vh;
+}
+
+.container {
+    width: 100%;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    color: var(--white);
+    align-items: center;
+}
+
+header .logo {
+    height: 50px;
+    width: auto;
+    object-fit: cover;
+}
+
+.container main {
+    display: flex;
+    background: var(--white);
+    border-radius: var(--round-md);
+    width: 90%;
+    margin-inline: auto;
+    box-shadow: var(--shadow-lg);
+}
+
+.container main .login-banner {
+    display: none;
+}
+
+.login-form {
+    padding: 20px 10px;
+    width: 100%;
+}
+
+.login-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.login-form form h3 {
+    text-align: center;
+    text-transform: capitalize;
+    letter-spacing: var(--letter-spacing);
+}
+
+.forget-password-link{
+    text-align: right;
+}
+
+.container footer {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    color: var(--white);
+}
+
+@media screen and (min-width: 400px) {
+    .container main {
+        width: 80%;
+    }
+}
+
+@media screen and (min-width: 760px) {
+    .container main {
+        max-width: 680px;
+        min-height: 450px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .login-form {
+        padding: 20px;
+    }
+
+    .container main .login-banner {
+        display: block;
+        overflow: hidden;
+        border-top-left-radius: var(--round-md);
+        border-bottom-left-radius: var(--round-md);
+    }
+
+    .login-form {
+        align-self: center;
+    }
+
+    .login-form form {
+        gap: 20px;
+    }
+
+
+}
+
+@media screen and (min-width: 992px) {
+    .container main {
+        max-width: 750px;
+        min-height: 500px;
+    }
+
+    .login-form form {
+        gap: 30px;
+    }
+}
