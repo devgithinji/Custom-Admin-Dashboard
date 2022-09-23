@@ -96,10 +96,31 @@ header .logo {
     }
 
     .container main .login-banner {
+        position: relative;
         display: block;
         overflow: hidden;
         border-top-left-radius: var(--round-md);
         border-bottom-left-radius: var(--round-md);
+    }
+
+    .login-banner .banner-info {
+        position: absolute;
+        background: rgba(0, 0, 0, 0.3);
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        padding-bottom: 20px;
+    }
+
+    .banner-info h4 {
+        color: var(--white);
+        font-size: var(--fs-2);
+        font-family: var(--ff-raleway);
+        text-align: center;
     }
 
     .login-form {

@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Auth</title>
     <link rel="stylesheet" href="./assets/css/login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
 </head>
 <body>
 
@@ -17,6 +18,9 @@
     <main>
         <div class="login-banner">
             <img src="./assets/images/user.jpg" class="img" alt="">
+            <div class="banner-info">
+                <h4>The best systems around!</h4>
+            </div>
         </div>
         <div class="login-form">
             <form action="">
@@ -29,7 +33,9 @@
                     <label for="password">Password</label>
                     <div class="input-group">
                         <input type="password" class="input" name="email" id="password" placeholder="Password">
-                        <i class="fa-solid fa-eye"></i>
+                        <div class="input-icon">
+                            <i id="password_toggle" class="fa-solid fa-eye"></i>
+                        </div>
                     </div>
                 </div>
                 <button type="submit" class="btn btn-primary btn-block">Login</button>
@@ -43,6 +49,6 @@
     </footer>
 </div>
 <!--script-->
-<script src="assets/js/script.js"></script>
+<script src="assets/js/login.js"></script>
 </body>
 </html>

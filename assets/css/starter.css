@@ -90,6 +90,7 @@ span,
 input,
 button,
 strong,
+input,
 i {
     display: block;
 }
@@ -195,4 +196,29 @@ h3 {
     padding: 10px;
     border-radius: var(--round-sm);
     outline-color: var(--primary-900);
+    height: 50px;
 }
+
+.input-group {
+    display: flex;
+    align-items: stretch;
+    height: 50px;
+}
+
+.input-group .input-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    background: var(--gray-300);
+    width: 50px;
+    border-top-right-radius: var(--round-sm);
+    border-bottom-right-radius: var(--round-sm);
+    cursor: pointer;
+}
+
+.input-group .input {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+

@@ -35,3 +35,4 @@ toggleSideBarSmallScreen.addEventListener('click', () => {
     sidebar.classList.toggle('toggle')
     body.classList.toggle('no-scroll')
 })
+
