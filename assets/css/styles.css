@@ -418,7 +418,7 @@ header .toggle-btn, header .toggle-btn-sm {
     position: absolute;
     top: 100%;
     right: 0;
-    padding: 10px;
+    padding-block: 10px;
     opacity: 0;
     width: 0;
     height: 0;
@@ -435,7 +435,7 @@ header .toggle-btn, header .toggle-btn-sm {
     background: var(--white);
     position: absolute;
     top: 5px;
-    right: 50%;
+    right: 25px;
     z-index: -1;
 }
 
@@ -443,6 +443,7 @@ header .toggle-btn, header .toggle-btn-sm {
     padding-inline: 20px;
     background: var(--white);
     border-radius: var(--round-md);
+    box-shadow: var(--shadow-md);
 }
 
 .user-account-container:hover .user-account-dropdown {
@@ -456,6 +457,8 @@ header .toggle-btn, header .toggle-btn-sm {
     padding-block: 10px;
     border-bottom: 1px solid var(--primary-900);
     text-transform: capitalize;
+    font-weight: var(--fw-700);
+    text-align: center;
 }
 
 .user-account-dropdown .user-account-link {
