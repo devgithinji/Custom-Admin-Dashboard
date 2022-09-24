@@ -144,3 +144,11 @@ header .logo {
         gap: 30px;
     }
 }
+
+@media screen and (orientation: landscape) {
+    html {
+        min-height: 100%;
+        height: auto;
+        padding-block: 50px;
+    }
+}
