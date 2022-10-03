@@ -1,16 +1,25 @@
 @import "starter.css";
 
 html {
-    height: 100%;
+    height: 100vh;
 }
 
 body {
     display: grid;
     place-items: center;
     min-height: 100%;
+    margin: 0;
+}
+
+.background {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
     background: linear-gradient(to right bottom, #1e3a8a, #274ba4, #2f5dbf, #366fda, #3b82f6) no-repeat;
     background-size: cover;
-    margin: 0;
 }
 
 .container {
@@ -76,6 +85,7 @@ header .logo {
     align-items: center;
     color: var(--white);
 }
+
 
 @media screen and (min-width: 400px) {
     .container main {
@@ -145,10 +155,3 @@ header .logo {
     }
 }
 
-@media screen and (orientation: landscape) {
-    html {
-        min-height: 100%;
-        height: auto;
-        padding-block: 50px;
-    }
-}

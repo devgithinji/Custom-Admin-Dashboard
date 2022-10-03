@@ -480,12 +480,22 @@ main .main-content {
         font-family: var(--ff-raleway);
     }
 
+
     .sidebar .links-list .link:not(.has-submenu) .submenu {
         display: none;
     }
 
     .sidebar .links-list .link .submenu .submenu-title {
         display: none;
+    }
+
+    .sidebar .links-list .link .submenu .sub-link {
+        color: var(--primary-500);
+    }
+
+    .sidebar:not(.toggle) .links-list .link .submenu .sub-link:hover {
+        background: var(--primary-300);
+        padding-left: 10px;
     }
 
     /*sidebar toggle*/
